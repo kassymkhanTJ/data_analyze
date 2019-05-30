@@ -1,0 +1,5 @@
+/data
+/reports
+__pycache__/
+.DS_Store
+output.txt
