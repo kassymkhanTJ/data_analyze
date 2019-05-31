@@ -47,7 +47,7 @@ try:
     question_titles = {}
     course_names = {}
 
-    # print(create_questions_table())
+    print(create_questions_table())
 
     cursor.execute("select id, title from question_titles") 
     question_title_records = cursor.fetchall() 
@@ -81,7 +81,7 @@ try:
     for i in range(len(names_list[-1])):
         if names_list[-1][i] is None:
             names_list[-1][i] = ''
-    names_list = [['Azamat Zhamanov', 'asdfds']]
+    # names_list = [['Ardak Shalkarbay-uly', 'asdfds']]
     with open('output.txt', 'w') as wf:
         for names in names_list:
             with open(os.path.join(os.getcwd(), 'Percentages.sql'), 'r') as f:

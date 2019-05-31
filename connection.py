@@ -1,11 +1,19 @@
 import psycopg2
 connection = None
+
+# Write here your own info
+USER = "kassymkhantorgayev"
+PASSWORD = ""
+HOST = "127.0.0.1"
+PORT = "5432"
+DATABASE = "sdu_reports"
+
 try:
-    connection = psycopg2.connect(user = "kassymkhantorgayev",
-                                  password = "",
-                                  host = "127.0.0.1",
-                                  port = "5432",
-                                  database = "datamorgana2")
+    connection = psycopg2.connect(user = USER,
+                                  password = PASSWORD,
+                                  host = HOST,
+                                  port = PORT,
+                                  database = DATABASE)
     cursor = connection.cursor()
     # Print PostgreSQL Connection properties
     # Print PostgreSQL version
