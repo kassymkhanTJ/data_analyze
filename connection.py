@@ -2,7 +2,7 @@ import psycopg2
 connection = None
 
 # Write here your own info
-USER = "kassymkhantorgayev"
+USER = "postgres"
 PASSWORD = ""
 HOST = "127.0.0.1"
 PORT = "5432"
